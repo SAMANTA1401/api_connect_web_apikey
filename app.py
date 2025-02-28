@@ -19,7 +19,7 @@ async def hello(name: str):
     return {"message": "Congrats!"+name+" This is your first API message"}
 
 static_string = "Initial Text"
-@app.post("/add")  # set post manparameter  
+@app.post("/add")  # set post man parameter  
 async def add_text(text: str):
     global static_string
     static_string += text
